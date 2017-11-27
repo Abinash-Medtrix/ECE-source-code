@@ -1,0 +1,295 @@
+﻿<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="padding:0px;border-top:1px solid #fff;">
+   
+    <div class="scrollmenu">
+        
+        <a ng-click="visit2('screening');" id="screening" class="activefooter visitFooter">Screening<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit2('Visit1');" id="Visit1" class="visitFooter">Visit1<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit1('Visit2');" id="Visit2" class="visitFooter">Visit2<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit1('Visit3');" id="Visit3" class="visitFooter">Visit3<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit2('Visit4');" id="Visit4" class="visitFooter">Visit4<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit2('Visit5');" id="Visit5" class="visitFooter">Visit5<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit1('Visit6');" id="Visit6" class="visitFooter">Visit6<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="visit2('Visit7');" id="Visit7" class="visitFooter">Visit7<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <!--<a ng-click="activescreen('Visit8');" id="Visit8">Visit8<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="activescreen('Visit9');" id="Visit9">Visit9<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="activescreen('Visit10');" id="Visit10">Visit10<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="activescreen('Visit11');" id="Visit11">Visit11<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="activescreen('Visit12');" id="Visit12">Visit12<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="activescreen('Visit13');" id="Visit13">Visit13<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        <a ng-click="activescreen('Visit14');" id="Visit14">Visit14<span class="glyphicon glyphicon-triangle-bottom"></span></a>-->
+    </div>
+   
+</div>
+<div id="dayview" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">            
+            <div class="modal-body">
+                <div class="text-right fullwidth">
+                    <button type="button" class="close" onclick="hideday();">&times;</button>
+                </div>
+                <h4 class="text-center height50" style="margin:0 auto;">New event</h4>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btmborderforcalendar" style="height:{{height}};">
+                    <table class="daytable">
+                        <tr style="border-top: 1px solid gray">
+                            <td class="tbheadforday">Time</td>
+                            <td colspan="7" class="tbheadforday" style="padding:5px;">{{curDate}}</td>
+                        </tr>
+                       
+                        <tr style="border-top: 1px solid gray" ng-repeat="time in timeArrayForDayView">
+                            <td class="daytbborder">{{time.time}}</td>
+
+                            <td colspan="7" style="border-bottom :1px solid gray;padding-left:5px;color:#F8F9F9;height:40px;width:100%;line-height:30px;" ng-click="enterevent(time.id);" id="{{time.id}}" ng-show="(time.title == '')">
+                                New event  <span class="fa fa-plus-circle text-right addsign pre-icon" ng-click="showeventpopup(curDate, time.id)"></span>
+                            </td>
+                            <td colspan="7" style="border-bottom :1px solid gray;padding-left:5px;color:#F8F9F9;width:100%;height:40px;line-height:30px;" id="{{time.id}}" class="eventdetails" ng-click="showevents(curDate, time.title, time.timeInMinutes);" ng-show="(time.title != '')">
+                                {{time.title}}
+                            </td>
+                        </tr>
+                       
+                    </table>
+                </div>
+            </div>           
+        </div>
+
+    </div>
+</div>
+<div id="eventpage" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content fullheight">
+            <div class="modal-body fullheight nopadding">
+                <div class="fullwidth" style="background-color:#32B7B6;color:#fff;">
+                    <div class="fullwidth text-right">
+                        <button class="text-right eventSaveBtn" ng-click="saveEvent(eventDate, eventTime);"><b>SAVE</b></button>
+                        <button type="button" class="close text-left eventEditClose" ng-click="cleartext();">&times;</button>
+                    </div>
+                    <table class="height50 fullwidth">
+                        <tr>
+                            <td class="fullheight fullwidth verticalmid">
+                                <p class="text-left fullwidth">
+                                    <textarea rows="2" placeholder="Title" class="eventTitle"></textarea>
+                                </p>
+                                <p class="text-left fullwidth">
+                                    <textarea rows="1" placeholder="Location" class="eventLocation"></textarea>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>                   
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:{{height}};">
+                    <table class="daytable" style="padding:10px;">
+                        <tr>        
+                            <td colspan="7" class="" style="padding:10px;width:20%;font-size:12px;">
+                            <!--<span class="fa fa-calendar" style="font-size:20px;"></span>-->
+                                <b>STARTS</b>
+                            </td>
+                            <td colspan="7" class="text-center" style="padding:10px;width:80%;">
+                                <div style="width:50%;float:left;">
+                                    {{eventDate}}
+                                </div>
+                                <div style="width:47%;float:left;">
+                                    {{eventTime1}} : <select id="minutes">
+                                                    <option value="00">00</option>
+                                                    <option value="05">05</option>
+                                                    <option value="10">10</option>
+                                                    <option value="15">15</option>
+                                                    <option value="20">20</option>
+                                                    <option value="25">25</option>
+                                                    <option value="30">30</option>
+                                                    <option value="35">35</option>
+                                                    <option value="40">40</option>
+                                                    <option value="45">45</option>
+                                                    <option value="50">50</option>
+                                                    <option value="55">55</option>
+                                                   </select>
+                                     {{eventTime2}}
+                                </div>
+                         
+                            </td>                                               
+                        </tr>
+                        <tr>
+                            <td colspan="7" class="" style="padding:10px;width:20%;font-size:12px;">
+                            <!--<span class="fa fa-clock-o" style="font-size:20px;"></span>-->
+                                <b>ENDS</b>
+                            </td>
+                            <td colspan="7" class="text-center" style="padding:10px;width:80%;">
+                                <div style="width:56%;float:left;">
+                                  
+                                </div>
+                                <div style="width:43%;float:right;">
+                                    {{endTime1}} : 00 {{endTime2}}
+                                </div>                           
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="confirmDiscard" class="modal" role="dialog">
+    <div class="modal-dialog">
+        <table class="fullheight fullwidth" style="background-color:rgba(0, 0, 0, 0.56);">
+            <tr>
+                <td class="verticalmid">
+                    <!-- Modal content-->
+                    <div class="modal-content" style="border:none;">
+                        <div class="modal-body nopadding">                            
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10" style="background-color:#fff;">
+                                <div ng-hide="titleError" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <h5 class="text-center fullwidth">
+                                            Are you sure you want to discard this event?
+                                        </h5>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 height50 text-center" ng-click="discardevent();">
+                                            <table class="fullheight fullwidth">
+                                                <tr>
+                                                    <td class="verticalmid" style="color:#32B7B6;">
+                                                        <b>DISCARD</b>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 height50 text-center" ng-click="closediscard();">
+                                            <table class="fullheight fullwidth">
+                                                <tr>
+                                                    <td class="verticalmid" style="color:#32B7B6;">
+                                                        <b>NO</b>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div ng-show="titleError" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <h5 class="text-center fullwidth">
+                                            <b>Please enter title</b>
+                                        </h5>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">                                      
+                                        <div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4
+                                             col-xs-offset-4 col-xs-4 height50 text-center" ng-click="closeTitleError();">
+                                            <table class="fullheight fullwidth">
+                                                <tr>
+                                                    <td class="verticalmid" style="color:#32B7B6;">
+                                                        <b>OK</b>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+</div>
+<div id="eventpagedetail" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content fullheight">
+            <div class="modal-body fullheight nopadding">
+                <div class="fullwidth" style="background-color:#32B7B6;color:#fff;">
+                    <div class="fullwidth text-right">
+                       
+                        <button type="button" class="close text-left eventEditClose" ng-click="discardEventpage();" style="font-size:26px;">&times;</button>
+                        <button type="button" class="close text-left eventEditClose" style="float:right !important;padding:15px 20px !important;"><i class="glyphicon glyphicon-trash" style="font-size:17px;" ng-click="onClickOpendeletPopEvent()"></i></button>
+                    </div>
+                   
+                    <table class="height50 fullwidth">
+                        <tr>
+                            <td class="fullheight fullwidth verticalmid">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 eventLocation" style="margin-bottom:10px;text-overflow:ellipsis;">
+                                    <h4 style="text-overflow:ellipsis;">{{eventdetailtitle}}</h4>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                   
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:{{height}};">
+                    <h5 class="text-left" style="padding:10px 0 10px 7px;color:#32B7B6;"><b>DETAILS</b></h5>
+                    <table class="daytable" style="padding:10px;">
+                        <tr>
+                            <td colspan="7" class="" style="padding:10px;width:20%;font-size:12px;">
+                                <span class="fa fa-clock-o" style="font-size:25px;"></span>                               
+                            </td>
+                            <td colspan="7" class="text-left" style="padding:10px;width:80%;">
+                                <div style="width:50%;float:left;" class="text-left">
+                                    {{date}}
+                                </div>
+                                <div style="width:50%;float:left;" class="text-center">
+                                    {{eventdetailtime}}
+                                </div>
+
+                            </td>
+                        </tr>
+                      
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="deletPopEvent" class="modal" role="dialog">
+    <div class="modal-dialog">
+        <table class="fullheight fullwidth" style="background-color:rgba(0, 0, 0, 0.56);">
+            <tr>
+                <td class="verticalmid">
+                    <!-- Modal content-->
+                    <div class="modal-content" style="border:none;">
+                        <div class="modal-body nopadding">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10" style="background-color:#fff;">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <h5 class="text-center fullwidth">
+                                        Are you sure you want to delete this event?
+                                    </h5>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 height50 text-center" ng-click="deleteevent(date, eventdetailtitle, eventdetailtime )">
+                                        <table class="fullheight fullwidth">
+                                            <tr>
+                                                <td class="verticalmid" style="color:#32B7B6;">
+                                                    <b>Yes</b>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 height50 text-center" ng-click="closedelete();">
+                                        <table class="fullheight fullwidth">
+                                            <tr>
+                                                <td class="verticalmid" style="color:#32B7B6;">
+                                                    <b>NO</b>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>

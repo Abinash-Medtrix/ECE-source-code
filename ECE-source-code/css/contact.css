@@ -1,0 +1,29 @@
+﻿.username
+{
+    vertical-align:middle;
+    text-align:center;
+    width:100%;
+    margin-bottom:10px;
+    min-height:50px;
+}
+.name{
+    text-transform:uppercase;
+    font-weight:900;
+    font-size:11px;
+}
+.speciality{
+    font-size:10px;
+}
+.contactflow
+{
+    overflow-y: hidden;
+}
+.glyphicon-ring {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  color: black;
+  display: inline-table;
+  text-align: center;
+}

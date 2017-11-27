@@ -1,0 +1,261 @@
+﻿.pdingBtm{
+    padding-bottom:0px !important;
+}
+.imageDiv{
+    padding:5px !important;
+    text-align:center;
+}
+.imageDiv img{
+    width:80%;
+}
+
+#drpdwn1{
+    top:70%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+   width: 90%;
+}
+.showImage{
+    display:none;
+}
+.submenu{
+    height:65px;
+    margin:0% 0 0 0;    
+}
+.submenubg{
+    background-color:#32B7B6;
+    height:100%;   
+    overflow-y:auto;
+}
+.submenubgcalender{
+    background-color:#32B7B6;
+    color:#fff;  
+    overflow-y:auto;
+    padding-bottom:100px;
+}
+.submenucolor{
+    color:#32B7B6;
+    text-transform:uppercase;
+}
+.paddingsubmenu{
+    padding: 75px 20px 80px 20px;
+     -webkit-overflow-scrolling: touch;
+}
+.nomargin_panel .panel-group{
+    margin-bottom:0px !important;
+}
+.submenu_icon_pad{
+    padding-left:10px;
+}
+
+.paddingsubmenu .panel{
+    background-color:transparent;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 1px rgba(0,0,0,0);
+}
+.paddingsubmenu .collapse,.paddingsubmenu .collapse .in,.panel-collapse {
+    background-color:#fff !important;
+}
+
+.panel[aria-expanded=true] .submenudown1 {
+    display:block;
+}
+.panel[aria-expanded=true] .submenuright1 {
+    display:none;
+}
+
+.panel[aria-expanded=false] .submenudown1 {
+    display:none;
+}
+.panel[aria-expanded=false] .submenuright1 {
+    display:block;
+}
+
+/*Innermenu*/
+.panel[aria-expanded=true] .submenudown1_1 {
+    display:none;
+}
+.panel[aria-expanded=true] .submenuright1_1 {
+    display:block;
+}
+
+.panel[aria-expanded=false] .submenudown1_1 {
+    display:block;
+}
+.panel[aria-expanded=false] .submenuright1_1 {
+    display:none;
+}
+
+
+/*List details*/
+.panel[aria-expanded=true] .lisdetail2 {
+    display:none;
+}
+.panel[aria-expanded=true] .lisdetail1 {
+    display:block;
+}
+
+.panel[aria-expanded=false] .lisdetail2 {
+    display:block;
+}
+.panel[aria-expanded=false] .lisdetail1 {
+    display:none;
+}
+
+
+.repeatedlist{   
+    padding:10px 0;
+    position:relative;
+    padding-left:20px;
+    font-size:11px !important;
+}
+.repeatedlist_detail{
+    padding:25px 0;
+    position:relative;
+    padding-left:20px;
+    font-size:11px !important;
+}
+.mainlistborder{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:96%;
+    border-bottom:1px solid #F8F8F8;
+    z-index:0;
+}
+.mainlistborder2{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    border-bottom:1px solid #F8F8F8;
+    z-index:0;
+}
+.innerlistborder{
+    padding:0 0px 0 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left:3px solid #32B7B6;
+    border-radius:0px !important;
+}
+.innerlistborderdefault{
+    padding:0 0px 0 0px;
+    border-left:3px solid #fff;
+    border-radius:0px !important;
+    color: #000;
+}
+.subinnerlist{
+    padding:0 5px 0 15px;   
+    font-size:11px; 
+}
+#accordion{
+        padding-bottom:80px;
+}
+.sublistmenu{
+    padding:5px 0;
+    font-size:11px !important;
+}
+.listdetailhidden{
+    background-color: #EFFBFB;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.listpoints{
+    font-size:10px;
+}
+.detail_listpad{
+    padding-left:20px;
+}
+.linkfordetails{
+    color:red;
+    text-decoration:underline;
+    text-transform:capitalize;
+}
+
+ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #000;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 50%;
+    z-index: 10;
+}
+
+ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 10px solid #000;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 50%;
+    z-index: 10;
+}
+
+.drp >li >a{
+    color: #fff;
+    padding:5px;
+    font-size:10px;
+    white-space: pre-wrap;
+}
+
+.drp{
+    top:70%;
+    float:none;
+    left:0;
+    padding: 0px 10px;
+    right: 0;
+    margin: 0px 30px;
+}
+
+
+
+
+.sideNav li + li a {
+    border-top: 1px solid grey;
+}
+
+/*Hematology listdetails*/
+.fulldetail{
+    background-color:#fff !important;
+    border-radius:0px !important;
+    height:100%;
+}
+.showlessdetail{
+    background-color:transparent;
+    border-radius:0px !important;
+    height:auto;
+}
+.enablefooter{
+    position:relative;
+}
+.footerfulldetail{
+    position:absolute;
+    bottom: 80px;
+    right: 20px;
+    height: 40px;
+    left: 20px;
+    background-color:rgba(0, 0, 0, 0.85);
+   
+}
+/*.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}*/
+.panel-group .panel + .panel{
+    margin-top:0px;
+}
+
+.overflowheight{
+    height: 80%; overflow-y:auto
+}
+

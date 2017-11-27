@@ -1,0 +1,14 @@
+﻿<div ng-include="'include/slide_menu.html'"></div>
+<snap-content data-snap-ignore="true">
+    <div ng-include="'include/header.html'" class="fixedheader"></div>
+    <div ng-controller="MenuController">
+        <div class="containerBlock paddingTop" set-height>
+            <div ng-repeat="item in items" ng-click="getchild(item.id)">
+                <div style="{{item.style}}" class="item">
+                    <div class="item-icon-div"><img src="{{item.icon}}" class="item-icon" /></div>
+                    <div class="item-title">{{item.title}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</snap-content>

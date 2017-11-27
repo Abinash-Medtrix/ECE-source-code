@@ -1,0 +1,145 @@
+﻿.logindoctor {
+    height: 40px;
+    border-radius: 15px;
+    background-color: #fff;
+    z-index: 1;
+    margin-bottom: -16px;
+    -webkit-box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.30);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bluclr {
+    color: #32B7B6;
+    margin: 0px auto;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.height150 {
+    height: 150px;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.fullheight {
+    height: 100%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.loginchevron {
+    font-size: 20px;
+}
+
+.verticalmid {
+    vertical-align: middle;
+    margin: 0px auto;
+}
+
+.loginbtn {
+    background-color: #32B7B6;
+    color: #fff;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.nopadding {
+    padding: 0px;
+}
+
+.logininput, logininput:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    box-shadow: none !important;
+    border-radius: 0px;
+    padding: 6px 0px !important;
+    font-weight: 600;
+}
+
+.loginform label {
+    font-weight: 400;
+    font-size: 10px;
+    color: gray;
+    margin-bottom:0px;
+}
+.cursorpointer{
+    cursor:pointer;
+}
+@media only screen and (device-width:768px) and (orientation:portrait){
+    .logo img {
+        width: 60%;
+    }
+    .ipadport {
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    .logindoctor{
+        height:60px;
+        font-size:20px;
+    }    
+    .height200{
+        height:300px;
+    }
+    .height150 {
+        height: 250px;
+        width: 80%;
+        margin: 20% auto;
+        float: none;
+    }
+    .ipadlogin{
+        font-size:20px;
+    }
+    .loginform label{
+        font-size:15px;
+    }
+}
+@media only screen and (device-width:1024px) and (orientation:landscape){
+    .logo img {
+        width: 40%;
+    }
+    .ipadport {
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    .logindoctor{
+        height:60px;
+        font-size:20px;
+    }
+    .logintable{
+        height:350px;
+    }
+    .height200{
+        height:300px;
+    }
+    .height150 {
+        height: 250px;
+        width: 80%;
+        margin: 15% auto;
+        float: none;
+    }
+    .ipadlogin{
+        font-size:20px;
+    }
+}

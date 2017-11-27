@@ -1,0 +1,58 @@
+﻿
+<snap-drawer data-snap-ignore="true">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide_menubg fullheight">
+        <table class="fullwidth slide_menu_head slide_m_height20">
+            <tr>
+                <td class="slidemenu_img slidemenu_icon verticalmid slide_m_img">
+                    <div class="doctorImg"><img src="img/doctor.png" class="fullwidth"></div>
+                </td>
+                <td class="slidemenu_icon verticalmid slide_m_name text-left">
+                    Doctor
+                </td>
+            </tr>
+        </table>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slide_m_height75">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center nopadding">
+                <table class="fullwidth">
+                    <tr>
+                        <td class="slidemenu_icon verticalmid fullwidth slide_menu_list list1" ng-class="{active: viewguide == true}" ng-click="viewGuide('id1')">
+                            VISIT Guide
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="slidemenu_icon verticalmid fullwidth slide_menu_list list2 calender" ng-class="{active: calender == true}"  ng-click="onClickslideMenu('list2')">
+                            CALENDAR
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="slidemenu_icon verticalmid fullwidth slide_menu_list list3" ng-click="onClickslideMenu('list3')">
+                            SEARCH
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="slidemenu_icon verticalmid fullwidth slide_menu_list list4 contact" ng-class="{active: contact == true}" id="contact" ng-click="onClickslideMenu('list4')">
+                            CONTACTS
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td class="slidemenu_icon verticalmid fullwidth slide_menu_list list5" ng-click="onClickslideMenu('list5')">
+                            ANALYTICS
+                        </td>
+                    </tr>-->
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logout" ng-click="onClickLogout('logout');">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center nopadding">
+                <table style="width:75%;margin:0px auto;">
+                    <tr>
+                        <td class="slidemenu_icon verticalmid slide_m_name logoutDiv">
+                            <i class="fa fa-power-off logoutIcon" aria-hidden="true"></i>
+                            <span class="logouttext">LOGOUT</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</snap-drawer>

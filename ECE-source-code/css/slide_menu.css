@@ -1,0 +1,69 @@
+﻿.slide_m_height75 {
+    height: 65%;
+    overflow-y: auto;
+}
+
+.slide_m_height20 {
+    height: 20%;
+}
+
+.slide_menubg {
+    background-color: #313944;
+    color: #fff;
+}
+
+.slidemenu_icon {
+    height: 50px;
+}
+
+.slide_m_img {
+    width: 20%;
+}
+
+.slide_m_name {
+    width: 80%;
+    padding-left: 10px;
+}
+
+.slide_menu_head {
+    padding-bottom: 40px;
+}
+
+.slide_menu_list {
+    /*padding-bottom:20px;*/
+}
+
+     .active {
+        background-color: #454E57;
+    }
+
+.logout {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #343C47;
+    border-top: 2px solid #343C47;
+}
+.doctorImg{
+    border: 1px solid #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 6px;
+}
+
+.logoutIcon{
+    font-size: 20px;
+}
+.logouttext{
+    font-size: 14px;
+    margin-left:15px;
+}
+.logoutDiv{
+    text-align:left !important;
+}
+
+.inFormation{
+    padding-top:20px;
+}
+
+ul{
+    padding-left:5px;
+}

@@ -1,0 +1,1742 @@
+﻿
+html{
+
+     -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+.background{
+
+    background-color:rgba(255,255,255,0.7);
+}
+.redbutton{
+    background-color:red !important;
+}
+.graybutton{
+    background-color:grey !important;
+}
+.greenbutton{
+    background-color:#bada55 !important;
+}
+
+.bold {
+    font-family: opensansbold;
+}
+
+.sbold {
+    font-family: opensanssemibold;
+}
+/*body {
+    font-family: 'OpenSans-reg';
+}
+
+@font-face {
+    font-family: 'OpenSans-reg';
+    src: url(../font/OpenSans-Regular.ttf) format('truetype');
+    src: url(../../fonts/Arial-Regular.eot) format('embedded-opentype');
+    src: url(../../fonts/Arial-Regular.otf) format('opentype');
+    src: url(../../fonts/Arial-Regular.woff) format('woff');
+}*/
+
+.foodaffiliation{
+    display:none;
+}
+.schedulehead {
+    color: #282e62;
+    padding: 0px;
+    float: left;
+    margin: 0px;
+    margin-bottom:10px;
+    margin-top:10px;
+   
+}
+.mymedicineContainer{
+    border-radius: 15px;
+    padding: 2%;
+}
+.meddetailfont span {
+     font-size: 25px;
+
+    font-weight: bold;
+}
+
+.auto-style1 {
+    width: 100%;
+    border: 1px solid #282E62;
+}
+
+.backgroundcolor {
+    background-color: rgba(255, 255, 255, 0.9);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.newbackgroundcolor {
+    background-color: rgba(255, 255, 255, 0.9);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.closebutton {
+    font-size: 40px;
+    float: right;
+    color: black;
+    margin: 20px;
+}
+
+.paddingforrow {
+   
+    padding: 20px;
+  
+   
+
+}
+
+.bg {
+    /*background-image: url(../images/bg.jpg);*/
+        background-color: transparent;
+}
+
+.tbstyle {
+    border: none !important;
+    
+    text-align: center;
+    font-size: 16px;
+}
+
+.rowborderbtm {
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+}
+
+.tbheader {
+    background-color: #282e62;
+    color: white;
+}
+
+.tdpadding {
+    padding: 10px;
+}
+
+.tbheaderpadding {
+    padding: 5px;
+}
+
+.paddingforwhole {
+    padding: 30px;
+}
+
+.toggleradious {
+}
+
+.medicinebtn {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.60) !important;
+    padding: 25px;
+    font-size: 30px;
+    border-radius: 20px;
+    outline: 0px solid !important;
+    color: #282e62;
+    box-shadow: none !important;
+}
+/*.medicinebtn:focus {
+        box-shadow:none;
+        outline:none;
+    }*/
+
+.btn:focus {
+    outline-style: none;
+}
+
+
+
+.btnpadding {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+}
+
+.btnborderpadding {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+/*.addbtn:focus {
+outline:none;
+}*/
+.addbtn {
+    width: 100%;
+    background-color: #d2d60a !important;
+    padding: 25px;
+    font-size: 30px;
+    border-radius: 20px;
+    outline: 0px solid !important;
+    color: #282e62;
+}
+
+    .addbtn:hover {
+        background-color: #d2d60a;
+    }
+
+    .addbtn:active {
+        background-color: #d2d60a;
+    }
+
+.lbl {
+    top: -12px;
+    margin: 0px auto;
+}
+
+
+
+
+
+
+.scorebtn {
+}
+
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.myswitch {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background: grey;
+    display: block;
+    border-radius: 20px;
+    position: relative;
+}
+
+    .myswitch:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        right: 1px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+input:checked + .myswitch {
+    background: #bada55;
+}
+
+    input:checked + .myswitch:after {
+        left: calc(100% - 22px);
+        transform: 
+            
+            
+            
+            X(-100%);
+    }
+
+.myswitch:active:after {
+    width: 20px;
+}
+
+.togglecenter {
+}
+
+
+
+
+.monthView {
+    min-height:300px;
+}
+
+
+
+
+
+
+
+
+
+
+.delbtn {
+    /*width:10%;*/
+    background-color: #d2d60a !important;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: 0px solid !important;
+    color: #282e62;
+    float: right;
+    margin-right: 10px;
+    border: none;
+}
+.txtboxalg {
+    width:20%;
+}
+
+.arrowsize {
+    max-width: 15px;
+}
+
+.arrowbtn {
+    width: 35px;
+    background-color: #d2d60a !important;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    outline: 0px solid !important;
+    color: #282e62;
+    float: right;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: none;
+    line-height: 1.2;
+    margin-bottom: 3px
+}
+
+
+.mymedihead {
+    color: #282e62;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.borderbtm {
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+
+.trborderclr {
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+
+.tablebtmmargin {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.headerbg {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 0px !important;
+    background-color: #d2d60a;
+}
+
+.backgroundheader {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.headerpadding {
+    color: #282e62;
+    padding-left: 40px;
+}
+
+.reminderclosebutton {
+    font-size: 40px;
+    float: right;
+    color: black;
+    margin-right: 30px;
+}
+
+
+
+.takenbtn {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.60) !important;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    outline: 0px solid !important;
+    color: #282e62 !important;
+}
+
+    .takenbtn:hover {
+        background-color: rgba(255, 255, 255, 0.60);
+        color: #282e62;
+    }
+
+.takemedicine {
+    padding: 20px;
+}
+
+.close {
+    outline: none !important;
+    font-size:38px !important;
+}
+
+.remindericon {
+    max-width: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tickicon {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+
+.paddingzero {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.datepicbtn {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 0px solid;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #282e62;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dateandweek {
+    color: #282e62;
+    font-size: 34px;
+}
+
+.datepicpadding {
+    padding-top: 20px;
+}
+
+.medibyday {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.meddetail {
+    padding-top: 20px;
+    padding-bottom: 20px;
+        padding-left: 50px;
+   
+    color: rgba(0, 0, 0, 0.67);
+}
+
+
+
+
+
+
+
+
+.donepadding {
+    padding: 20px;
+}
+
+
+
+
+.snoozepadding {
+    padding: 100px;
+}
+
+.btmpaddingcancel {
+    padding-bottom: 0px;
+}
+
+.txtbox {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgb(191, 191, 191);
+}
+
+.formpadding {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.rowpadding {
+    padding-bottom: 20px;
+}
+
+
+
+.resetbtn {
+    background-color: rgba(255, 255, 255, 0.58) !important;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 24px;
+    border-radius: 10px;
+    outline: none !important;
+    color: #282e62 !important;
+    margin-right: 10px;
+    border: none;calendarview;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.savebtn {
+    background-color: #d2d60a !important;
+}
+
+.resetbtnpadding {
+    padding-left: 30%;
+    /*padding-right:30%;*/
+    padding-bottom: 20px;
+}
+
+.hrtxtbox {
+    width: 20px;
+}
+
+.arrowwidth {
+    max-width: 50%;
+}
+
+.calendarviewbg {
+    background-color: #d2d60a;
+    color: black;
+    height: 100%;
+    
+}
+
+.btmborderforcalendar {
+    margin-bottom: 40px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+option {
+    background-color: #eff0ef;
+}
+
+
+.calendarborder {
+
+   width: 14.28%;
+    height: 100px;
+    font-size: 20px;
+    border: 1px solid;
+    text-align: center;
+    border-color: gray;
+    padding-left: 1%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.weekdaypadding {
+    height: 30px;
+}
+
+.calendarsideview {
+    background-color: #d2d60a;
+    outline: none !important;
+    box-shadow: none !important;
+    border: #d2d60a !important;
+    width: 100%;
+    border-radius: 0px;
+}
+
+    /*.calendarsideview:focus {
+        background-color: white !important;
+    }*/
+
+    .calendarsideview:hover {
+        background-color: white !important;
+    }
+
+
+.calendarsideviewpadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.calbotpadding {
+    padding-bottom: 20px;
+}
+
+
+
+.toprowbgcolor {
+    background-color: #d2d60a;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.topcalendarsideview {
+    background-color: #d2d60a;
+    outline: none !important;
+    box-shadow: none !important;
+    border: #d2d60a !important;
+    width: 100%;
+    border-radius: 0px;
+}
+
+    .topcalendarsideview:hover {
+      
+        background-color: white !important;
+    }
+
+.showyear {
+    color: #282e62;
+}
+
+.myscore {
+    color: #282e62;
+}
+
+.precentage {
+    float: right;
+    background-color: #d2d60a;
+    color: #282e62;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.auto-style3 {
+    width: 100%;
+    float: left;
+    border: 1px solid #666666;
+}
+
+.auto-style4 {
+    width: 100%;
+    border: 1px solid #808080;
+}
+
+.daytable {
+    width: 100%;
+}
+
+.daytbborder {
+    width: 8%;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: gray;
+    padding-left: 1%;
+    border-left: none;
+    padding-right: 1%;
+}
+
+.daytbborder2 {
+    width: 12.5%;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: gray;
+    padding-left: 1%;
+}
+
+.leftbordernone {
+    border-right: none;
+}
+
+.tbheadforday {
+    font-size: 24px;
+    text-align: center;
+    border:1px solid gray;
+   
+}
+.takenornot {
+max-width:20%;
+}
+.medinamewidth {
+width:70%;
+}
+.deleditbtnwidth {
+width:30%;
+}
+
+/*media*/
+
+
+@media only screen and (min-width:1025px) {
+    .arrowbtn {
+        padding-right: 2px;
+    }
+}
+
+@media only screen and (max-width:1281px) {
+}
+
+@media only screen and (max-width:1025px) {
+    .tbstyle {
+    font-size:16px;
+    }
+    
+    /*.meddetail {
+        padding-left: 15%;
+    }*/
+    .arrowbtn {
+    padding:8px;
+    }
+    .formfont {
+        font-size: 23px;
+    }
+
+    .medicinebtn {
+        font-size: 24px;
+    }
+
+    .addbtn {
+        font-size: 24px;
+    }
+
+    .paddingforrow {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .btnpadding {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .btnborderpadding {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width:961px) {
+    .hrtxtbox {
+        width: 30px;
+    }
+
+    .paddingforrow {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .btnpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .btnborderpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:801px) {
+    .dateandweek {
+        font-size: 24px;
+    }.medinamewidth {
+width:60%;
+}
+.deleditbtnwidth {
+width:40%;
+}
+
+}
+
+@media only screen and (max-width:769px) {
+    .meddetailfont {
+    font-size:25px;
+    }
+      .meddetailfont span {
+    font-size:25px;
+    }
+       .topcalendarsideview {
+        padding: 20px;
+    }
+
+    .mymedihead {
+        font-size: 30px;
+    }
+
+    .dateandweek {
+        font-size: 26px;
+    }
+
+    .formfont {
+        font-size: 18px;
+    }
+
+    .hrtxtbox {
+        width: 30px;
+    }
+
+    .paddingforrow {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btnpadding {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btnborderpadding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*.arrowbtn {
+    margin-left:5px !important;
+    margin-right:5px !important;
+    font-size:14px !important;
+    }
+    .delbtn {
+    font-size:14px !important;
+    margin-right:5px !important;
+    }
+    .medicinename {
+    font-size:14px !important;
+    }*/
+
+
+}
+
+@media only screen and (max-width:737px) {
+
+           .tbstyle {
+        font-size: 20px;
+    }
+    .schedulehead {
+    font-size:30px;
+    }
+
+    .arrowbtn {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        font-size: 14px;
+    }
+    .arrowbtn {
+    padding:8px;
+    }
+    .delbtn {
+        font-size: 14px;
+        margin-right: 5px;
+       padding:8px;
+    
+        }
+
+
+    .formfont {
+        font-size: 28px;
+    }
+
+    .hrtxtbox {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width:733px) {
+}
+
+@media only screen and (max-width:668px) {
+    .arrowsize {
+        max-width: 17px;
+    }
+    .arrowbtn {
+        width: 11%;
+    }
+    .dateandweek {
+    font-size: 22px;
+}
+}
+
+@media only screen and (max-width:641px) {
+}
+
+@media only screen and (max-width:601px) {
+    .paddingforwhole {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .formfont {
+  font-size: 20px;    }
+    .dateandweek {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .tbheadforday{
+        font-size:19px;
+    }
+    .daytbborder{
+       font-size: 13px;
+    }
+
+}
+@media only screen and (max-width:569px) {
+    .calendarborder {
+        height: 50px;
+        font-size: 16px;
+    }
+.meddetailfont {
+    font-size: 18px;
+}
+
+    .dateandweek {
+    font-size: 20px;
+}
+    .tbstyle {
+        font-size: 20px;
+    }
+
+    .schedulehead {
+        font-size: 30px;
+    }
+
+    .arrowbtn {
+        width: 30px;
+    }
+
+    .arrowsize {
+        max-width: 20px;
+    }
+}
+
+@media only screen and (max-width:481px) {
+      .meddetailfont span {
+    font-size: 13px;
+    font-weight: bold;
+}
+    .takemedicine {
+    font-size:20px;
+    }
+    .dateandweek {
+    font-size: 16px;
+}.tbstyle {
+    font-size: 16px;
+}
+    .takenbtn {
+    padding:10px;
+    }
+    .medicinename {
+    font-size:20px;
+    }
+     .daytbborder {
+           font-size: 14px;
+    width: 15%;
+    }
+
+    .tbheadforday {
+        font-size: 16px;
+
+
+    }
+
+    .myscore {
+        font-size: 24px;
+    }
+
+    .meddetailfont {
+        font-size: 16px;
+    }
+
+    .btnpadding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .paddingforwhole {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .reminderbtnpadding {
+        padding: 10px;
+    }
+
+    .formpadding {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .resetbtnpadding {
+        padding-left: 21%;
+    }
+
+    .formfont {
+        font-size: 24px;
+    }
+
+    .reminderclosebutton {
+        font-size: 30px;
+    }
+
+    .headerpadding {
+        font-size: 24px;
+    }
+
+    .remindericon {
+        max-width: 40px;
+    }
+
+    .datepicbtn {
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width:415px) {
+   .calendarborder {
+    font-size: 12px;
+}
+     .meddetailfont {
+        font-size: 11px;
+
+    }/*.meddetail {
+    padding-left: 65px;
+}*/
+    h1  .headerpadding {
+        font-size: 30px;
+    }
+    .takenbtn {
+    font-size:20px;
+    }
+    .schedulehead {
+    font-size:22px;
+    }
+    .medicinebtn {
+    padding:16px;
+        font-size:20px;
+    }
+    .addbtn {
+    font-size:20px;
+    padding:16px;
+    }
+    .tbstyle {
+        font-size:16px;
+       
+    }
+
+    .closebutton {
+        font-size: 35px;
+    }
+
+    .hrtxtbox {
+        width: 25px;
+    }
+
+    /*.col-sm-3 {
+        padding-left: 5px;
+    }*/
+
+    .resetbtnpadding {
+        padding-left: 17%;
+    }
+
+    .formfont {
+        font-size: 20px;
+    }
+
+    .paddingforwhole {
+        padding: 0px;
+    }
+
+    .mymedihead {
+        font-size: 20px;
+    }
+
+    .delbtn {
+        font-size: 10px;
+    }
+
+    .arrowbtn {
+        font-size: 12px;
+    }
+
+    .arrowbtn {
+        width: 24px;
+    }
+
+    .arrowsize {
+        max-width: 14px;
+    }
+
+    .medicinename {
+        font-size: 14px;
+    }
+
+    .dateandweek {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:413px) {
+}
+
+@media only screen and (max-width:385px) {
+    .col-sm-3 {
+        padding-right: 0px;
+    }.formfont {
+    font-size: 17px;
+}
+    .showyear {
+    font-size:18px;
+    }.myscore {
+    font-size: 18px;
+}
+     .tbheadforday {
+            font-size: 11px;
+}
+}
+
+@media only screen and (max-width:376px) {
+    .tbstyle {
+    font-size:14px;
+    }
+    .dateandweek {
+    font-size:13px;
+    }
+    .topcalendarsideview {
+    padding:17px;
+    }
+    .daytbborder {
+       width: 14%;
+    font-size: 12px;
+}.medinamewidth {
+    width: 50%;
+}.deleditbtnwidth {
+    width: 50%;
+}
+}
+
+@media only screen and (max-width:361px) {
+    .calendarborder {
+        font-size: 12px;
+    }
+    .meddetailfont {
+    font-size:13px;
+    }
+    .topcalendarsideview {
+        padding: 16px;
+    }
+
+    .delbtn {
+        font-size: 10px !important;
+    }
+
+    .arrowbtn {
+        font-size: 12px !important;
+    }
+
+    .showyear {
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:321px) {
+
+    .meddetailfont span {
+    font-size: 13px;
+    font-weight: bold;
+}
+  #addmedicine .caret {
+          width: 19%;  
+    }
+   .dayMedButton{
+            font-size: 17px;
+    }
+ .calendarborder {
+    font-size: 11px;
+}
+       .takemedicine {
+    font-size:16px;
+    }
+       .daytbborder{
+           width:16%;
+       }
+.tbheadforday{
+           font-size: 11px;
+}
+    .takenbtn {
+    font-size:16px;
+    }
+    .arrowbtn {
+        margin-left:0px;
+       padding: 6px 8px;
+    }
+    .delbtn {
+       padding: 6px 12px;
+    }
+    .arrowsize {
+    max-width:12px;
+    }
+    .topcalendarsideview {
+        margin-top: 0px;
+        padding: 12px;
+    }
+
+    .showyear {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .myscore {
+        font-size: 18px;
+    }
+
+    .removepadding {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .schedulehead {
+        font-size: 20px;
+    padding-left:10px;
+        }
+
+    .tbstyle {
+        font-size: 14px;
+        
+    }
+
+    .medicinebtn {
+        font-size: 16px;
+    }
+
+    .addbtn {
+        font-size: 16px;
+    }
+
+    .dateandweek {
+        font-size: 12px;
+    }
+
+    .col-sm-3 {
+        padding-left: 5px;
+    }
+
+    .formfont {
+        font-size: 14px;
+    }
+
+    .forsmalldevice {
+        margin-left: 95px;
+    }
+
+    .paddingforrow {
+        padding: 5px;
+    }
+
+    .paddingforwhole {
+        padding: 0px;
+    }
+
+    h1 .mymedihead .schedulehead .headerpadding {
+        font-size: 20px;
+    }
+
+    .closebutton {
+        font-size: 22px !important;
+    }
+
+    .btnpadding {
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .btnborderpadding {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .medicinebtn {
+        font-size: 14px !important;
+        padding: 10px;
+    }
+
+    .addbtn {
+        padding: 10px;
+        font-size: 14px !important;
+    }
+
+    .backgroundcolor {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .mednamequa {
+        font-size: 18px;
+    }
+}
+
+.red{
+
+     border: 1px solid white;
+     color:white;
+     background-color:red;
+}
+
+.lightgray{
+  
+     border: 1px solid rgba(255, 255, 255, 0.9);
+     color:black;
+     background-color:lightgray;
+}
+
+.yellow{
+
+     border: 1px solid rgba(255, 255, 255, 0.9);
+     color:black;
+     background-color:yellow;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    /*.col-lg-12 {
+        padding: 45px;
+    }*/
+
+    .medibyday {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /*.meddetail {
+        padding-left: 20%;
+    }*/
+}
+
+
+@media only screen and (max-width: 479px) {
+    /*.meddetailfont {
+        font-size: 14px;
+    }.meddetail {
+    padding-left: 65px;
+}*/
+
+
+    }
+
+@media only screen and (min-width:1023px) {
+    .hrtxtbox {
+        width: 30px;
+    }
+
+    .resetbtnpadding {
+        padding-left: 36%;
+    }
+    .tbheadforday{
+        font-size:18px;
+    }
+}
+
+
+/*my css part*/
+
+/*.calendarborderForYear{
+
+    height: 32px;
+    width: 40px;
+    font-size: 14px;
+    text-align: center;
+   
+    padding: 2px;
+    
+    
+}*/
+.calendarborderForYear {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px;
+}
+
+.dayMedButton{
+
+      
+    padding-left: 2px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: black;
+    width: 100%;
+    background-color: #d2d60a;
+    text-align: center;
+    font-size: 20px;
+}
+
+#hideDiv{
+
+    position:absolute;
+    height:200px;
+    width:100%;
+    overflow-y:auto;
+    border: 1px solid grey;
+ 
+}
+
+#hideColorDiv{
+
+    position:absolute;
+    height:200px;
+    width:100%;
+    overflow-y:auto;
+    border: 1px solid grey;
+}
+.divborder {
+
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: rgb(191,191,191);
+}
+
+
+.iconlist{
+    font-size:2em;    
+    border-left:1px solid rgb(191,191,191);
+    border-right:1px solid rgb(191,191,191);
+  
+}
+.dropIcon{
+
+    /*font-size:15px;*/
+   float: right;
+    
+}
+
+#iconShape{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  
+ 
+}
+
+.converttoLowercase {
+    text-transform: lowercase;
+}
+
+
+@media only screen and (max-width:736px) {
+    .medStrInput {
+
+            height: 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width:569px) {
+    .dayMedButton{
+            font-size: 15px;
+    }
+
+    .dropIcon {
+           font-size: 13px;
+           /*margin-left: 35px;*/
+    }
+    #iconShape{
+
+    height: 43px;
+    font-size: 2em;
+    }
+    .medStrInput{
+
+    height:40px;
+    width: 25%;
+    margin:0px;
+    padding-left: 6px;
+    border-bottom:1px solid grey;
+}
+
+}
+
+.iconlist:hover{
+
+    background-color:#d2d60a;
+    color:white;
+
+}
+
+
+.medStrInput{
+
+    /*height:44px;*/
+    width: 100%;
+    margin:0px;
+    padding-left: 6px;
+    border-bottom:1px solid grey;
+}
+
+.colorDiv{
+
+    margin: auto;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.colorDiv:hover{
+
+      background-color:#d2d60a;
+    
+}
+
+
+/* ADD MEDICINE */
+
+#addmed{
+
+    overflow-y:auto;
+}
+
+#addmedicine {
+    font-family: opensansregular;
+    height:100%;
+}
+
+#addmedicine label {
+    color: #9c9c9c;
+    height: 33px;
+    line-height: 33px;
+    font-weight: normal;
+}
+
+#addmedicine select {
+    height: 33px;
+    width: 100%;
+    font-family: opensansregular;
+}
+
+#addmedicine input {
+    width: 100%;
+    height: 33px;
+    border-bottom: 1px solid #ccc;
+    color: #202766;
+}
+
+#addmedicine div[class*=' col-'] {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#addmedicine .medicine-ctrls {
+    text-align: center;
+}
+
+#addmedicine .btn-mobileSelect-gen {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    font-size: 18px;
+    height: 33px;
+    padding: 0px;
+    color: #202766;
+}
+
+#addmedicine .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /*margin-left: 2px;*/
+    vertical-align: middle;
+    border-top: 8px dashed;
+    border-top: 4px solid\9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    color: lightgray;
+}
+
+#addmedicine .pre-icon {
+    float: right;
+    margin-top: -25px;
+    font-size: 20px;
+    color: #202766;
+}
+
+.mobileSelect-control {
+    color: #202766 !important;
+}
+
+.mobileSelect-control b {
+    color: transparent;
+}
+
+.mobileSelect-cancelbtn {
+    background-color: #ccc !important;
+    border: 1px solid #ccc;
+    color: #000 !important;
+}
+
+
+.deletemsg{
+    padding: 20px 0px;
+    margin: 0px;
+    font-size: 1.6em;
+}
+
+.mobileSelect-clearbtn{
+        background-color: #d2d605 !important;
+}
+.medicineShape{
+  content: '\e817';
+  float: left;
+  margin: 5px;
+  border: 4px solid #000;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+ transition: border .25s linear;
+-webkit-transition: border .25s linear;
+}
+
+
+.medicineShapes:before {
+    content: '\e817';
+    font-size:25px;
+    float:left;
+    color:#d2d60a !important;
+    /*margin-bottom:5px;*/ 
+}
+
+.bottomborder{
+        border-bottom:1px solid #ccc;
+        height:40px
+}
+
+#addmedicinebyOption{
+    background-color:#fff;
+}
+
+.errorMessage{
+    color:#FF0000 !important;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#dayview .modal-content {
+    position: relative;
+    background-color: transparent !important;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid #fff !important;
+    border: 0px solid #fff !important;
+    border-radius: 0px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0px 0px #fff !important;
+    box-shadow: 0 0px 0px #fff !important;
+}
+#dayview{
+    background-color:rgb(248, 249, 249);
+    font-weight:600;
+    color:#32B7B6;
+}
+.enterevent{
+    background-color:#32C5D9;
+    color:#fff;
+}
+.eventdetails{
+    background-color:#32C5D9;
+    color:#fff;
+    text-overflow:ellipsis;
+}
+.addsign{
+    display:none;
+    float:right;
+    margin-right:20px;
+    font-size:30px;
+}
+.eventTitle, .eventLocation, .eventTitle:focus, .eventLocation:focus{
+   resize: none;
+    width: 90%;
+    background-color: #53bfbe;
+    border: none;
+    color: #fff;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border-radius: 5px;
+}
+/*event edit page*/
+.eventSaveBtn, .eventSaveBtn:focus{
+    padding:28px 20px;
+    background-color:transparent;
+    border:none;
+    outline:none;
+}
+.eventEditClose{
+   padding:20px 20px !important;
+   color:#fff !important;
+   opacity:1;
+   float:left !important;
+}
+#eventpage textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+  
+}
+
+#eventpage textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+   
+}
+
+#eventpage textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+   
+}
+
+#eventpage textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fff;
+   
+}
+
+.Noevent
+{
+    background-color:transparent;
+}
+.eventAdded
+{
+    background-color:#5257B5;
+    border-radius:40px;
+}

@@ -1,0 +1,65 @@
+﻿<div ng-include="'include/slide_menu.html'"></div>
+<!---->
+<snap-content data-snap-ignore="true" class="nomargin_panel">
+    <div ng-include="'include/header.html'" class="fixedheader"></div>
+    <div ng-controller="ContactController" set-height class="submenubg" id="calenderpage">
+        <div style="position:absolute;background-color:#fff;width:100%;height:100%;z-index:999;" id="loadercalender">
+            <table class="fullwidth fullheight">
+                <tr>
+                    <td class="verticalmid text-center">
+                        <img src="img/load5.gif" style="width:50%;margin:0 auto;"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div ng-show="screening" class="submenubgcalender">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 submenubg contactflow">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding" style="height:70px;background-color:#EFFBFB;margin:70px 0 20px 0;overflow-y:hidden;">
+                    <table style="height:100%;width:100%;">
+                        <tr>
+                            <td style="vertical-align:middle;text-align:center;margin:0px auto;color:#32B7B6;">
+                                CALENDER
+                            </td>
+                        </tr>
+                    </table>
+                </div>               
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btmborderforcalendar" id="yearview" style="display: block;height:{{height}}">
+
+                <h3 style="text-align :center; border-bottom :1px solid gray; margin-bottom :20px;border-top :1px solid gray; padding :10px;"> {{year}}</h3>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" ng-repeat="month in yearStatus">
+
+                    <table style="margin: 0 auto; ">
+                        <tr class="">
+                            <td colspan="7">
+                                <h3 style="text-align: center;margin: 10px;">{{monthname[$index]}}</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calendarborderForYear weekdaypadding" ng-repeat="dayName in days">{{dayName}}</td>
+                        </tr>
+                        <tr ng-repeat="week in month" >
+                            <td class="calendarborderForYear {{day.status}}" ng-repeat="day in week" ng-click="showDayViewforYear(day.date,$parent.$parent.$index,year, day.events)" on-finish-render="ngRepeatFinished">{{day.date}}</td>                           
+                        </tr>
+
+                    </table>
+
+
+                </div>
+
+            </div>           
+        </div>
+        <div ng-hide="screening" class="submenubg" style="color:#fff;">
+            <table class="fullwidth fullheight">
+                <tr>
+                    <td class="verticalmid text-center">
+                        <div class="text-center">NO DATA</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div ng-include="'include/footer.html'" class="fixedfooter" data-snap-ignore="true"></div>
+</snap-content>
